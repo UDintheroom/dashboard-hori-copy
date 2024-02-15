@@ -29,8 +29,8 @@ const Layout = () => {
                     right={'12px'}
                     py={2}
                     px={{ base: 2, xl: 4 }}
-                    // bg={'rgba(255, 255, 255, 0.1)'}
-                    bg={'rgba(255, 0, 0, 0.1)'}
+                    bg={'rgba(255, 255, 255, 0.7)'}
+                    // bg={'rgba(255, 0, 0, 0.1)'}
                     backdropFilter={'blur(10px)'}
                     borderRadius={'0.75rem'}
                     transition={'all 0.2s'}

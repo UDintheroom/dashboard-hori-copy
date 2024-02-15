@@ -3,6 +3,9 @@ import MiniSt from '../../components/card/MiniSt'
 import IconBox from '../../components/icons/IconBox'
 import { MdBarChart } from 'react-icons/md'
 import { FcAreaChart, FcDoughnutChart, FcFlowChart, FcComboChart } from 'react-icons/fc'
+import TotalSpent from './components/TotalSpent'
+import Weekly from './components/Weeklt'
+import CheckTable from './components/CheckTable'
 
 const Home = () => {
     return (
@@ -34,6 +37,11 @@ const Home = () => {
                     value="2935"
                     startContent={<IconBox w={'56px'} h={'56px'} bg={'bgDefault'} icon={<FcFlowChart />} />}
                 />
+            </SimpleGrid>
+            <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
+                <TotalSpent />
+                <Weekly />
+                <CheckTable />
             </SimpleGrid>
             {/* <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
                 <Box bg="tomato" height="80px">
