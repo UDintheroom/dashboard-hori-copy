@@ -12,19 +12,19 @@ const MainSlide = () => {
             <SwiperWrap pagination={true} modules={[Pagination]} className="main-slide topCont">
                 <SwiperSlide>
                     <Image
-                        src="https://images.unsplash.com/photo-1626544827763-d516dce335e2?q=80&w=3667&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src="https://images.unsplash.com/photo-1635589004162-72ce706cabd2?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Dan Abramov"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
-                        src="https://images.unsplash.com/photo-1632292220916-e9c34dd75db2?q=80&w=3732&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src="https://images.unsplash.com/photo-1635257153190-6313ae8a9fdc?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Dan Abramov"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
-                        src="https://images.unsplash.com/photo-1632243313737-e03f05bd09db?q=80&w=3732&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src="https://images.unsplash.com/photo-1627734819947-ba884aea9801?q=80&w=2117&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Dan Abramov"
                     />
                 </SwiperSlide>

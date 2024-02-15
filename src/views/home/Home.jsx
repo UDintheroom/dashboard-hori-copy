@@ -35,40 +35,40 @@ const Home = () => {
                     startContent={<IconBox w={'56px'} h={'56px'} bg={'bgDefault'} icon={<FcFlowChart />} />}
                 />
             </SimpleGrid>
-            <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
+            {/* <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
                 <Box bg="tomato" height="80px">
-                    ddd
+                    asdf
                 </Box>
                 <Box bg="tomato" height="80px">
-                    ddd
+                    asdf
                 </Box>
             </SimpleGrid>
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
                 <Box bg="tomato" height="80px">
-                    ddd
+                    asdf
                 </Box>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
                     <Box bg="tomato" height="80px">
-                        ddd
+                        asdf
                     </Box>
                     <Box bg="tomato" height="80px">
-                        ddd
+                        asdf
                     </Box>
                 </SimpleGrid>
             </SimpleGrid>
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
                 <Box bg="tomato" height="80px">
-                    ddd
+                    asdf
                 </Box>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
                     <Box bg="tomato" height="80px">
-                        ddd
+                        asdf
                     </Box>
                     <Box bg="tomato" height="80px">
-                        ddd
+                        asdf
                     </Box>
                 </SimpleGrid>
-            </SimpleGrid>
+            </SimpleGrid> */}
         </VStack>
     )
 }
