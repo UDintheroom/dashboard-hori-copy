@@ -1,43 +1,76 @@
-import Title, { TitleH4 } from '../../components/common/Title'
-import { Section } from '../../components/layout/Container'
-import Layout from '../../components/layout/Layout'
-import { Button, ButtonGroup, Container } from '@chakra-ui/react'
-import MainSlide from './components/MainSlide'
+import { Box, SimpleGrid, VStack } from '@chakra-ui/react'
+import MiniSt from '../../components/card/MiniSt'
+import IconBox from '../../components/icons/IconBox'
+import { MdBarChart } from 'react-icons/md'
+import { FcAreaChart, FcDoughnutChart, FcFlowChart, FcComboChart } from 'react-icons/fc'
 
 const Home = () => {
-  return (
-    <>
-      <MainSlide/>
-      <Section isLightBackground={true}>
-        <Container>
-          <Title>회사소개</Title>
-          <TitleH4>사장님 말씀</TitleH4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolores impedit? Sunt omnis dolores quaerat. In ipsa odio sequi aliquid error eius laudantium, blanditiis, quasi, labore unde exercitationem facilis culpa!
-          <TitleH4>회사 정보 뭐시기</TitleH4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </Container>
-      </Section>
-      <Section>
-        <Container>
-          <Title>회사비전</Title>
-          <TitleH4>우리 회사 비전 짱임</TitleH4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolores impedit? Sunt omnis dolores quaerat. In ipsa odio sequi aliquid error eius laudantium, blanditiis, quasi, labore unde exercitationem facilis culpa!
-        </Container>
-      </Section>
-      <Section isLightBackground={true}>
-        <Container>
-          <Title>회사 소개</Title>
-          <TitleH4>사장님 말씀</TitleH4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui magnam assumenda, adipisci iste
-          sint provident tempore mollitia. Deserunt labore ipsa quod odit dolore animi repudiandae vero
-          dolorum delectus similique?
-          <TitleH4>사모님 말씀</TitleH4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui magnam assumenda, adipisci iste
-          sint
-        </Container>
-      </Section>
-    </>
-  )
+    return (
+        <VStack spacing={5}>
+            <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing="20px" w={'100%'}>
+                <MiniSt
+                    name="Earnings"
+                    value="$350.4"
+                    startContent={<IconBox w={'56px'} h={'56px'} bg={'bgDefault'} icon={<MdBarChart />} />}
+                />
+                <MiniSt
+                    name="Spend this month"
+                    value="$642.39"
+                    startContent={<IconBox w={'56px'} h={'56px'} bg={'bgDefault'} icon={<FcDoughnutChart />} />}
+                />
+                <MiniSt growth="10.39%" name="Sales" value="$574.34" />
+                <MiniSt
+                    name="Your balance"
+                    value="$1,000"
+                    endContent={<IconBox w={'56px'} h={'56px'} bg={'bgDefault'} icon={<FcAreaChart />} />}
+                />
+                <MiniSt
+                    name="New Tasks"
+                    value="154"
+                    startContent={<IconBox w={'56px'} h={'56px'} bg={'bgDefault'} icon={<FcComboChart />} />}
+                />
+                <MiniSt
+                    name="Total Projects"
+                    value="2935"
+                    startContent={<IconBox w={'56px'} h={'56px'} bg={'bgDefault'} icon={<FcFlowChart />} />}
+                />
+            </SimpleGrid>
+            <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
+                <Box bg="tomato" height="80px">
+                    ddd
+                </Box>
+                <Box bg="tomato" height="80px">
+                    ddd
+                </Box>
+            </SimpleGrid>
+            <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
+                <Box bg="tomato" height="80px">
+                    ddd
+                </Box>
+                <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
+                    <Box bg="tomato" height="80px">
+                        ddd
+                    </Box>
+                    <Box bg="tomato" height="80px">
+                        ddd
+                    </Box>
+                </SimpleGrid>
+            </SimpleGrid>
+            <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
+                <Box bg="tomato" height="80px">
+                    ddd
+                </Box>
+                <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
+                    <Box bg="tomato" height="80px">
+                        ddd
+                    </Box>
+                    <Box bg="tomato" height="80px">
+                        ddd
+                    </Box>
+                </SimpleGrid>
+            </SimpleGrid>
+        </VStack>
+    )
 }
 
 export default Home

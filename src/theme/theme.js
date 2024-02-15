@@ -10,16 +10,20 @@ import { switchStyles } from './components/switch'
 import { linkStyles } from './components/link'
 import { breakpoints } from './foundations/breakpoints'
 import { globalStyles } from './styles'
+import { containerTheme } from './components/container'
+import { cardStyles } from './components/card'
 export default extendTheme(
-  { breakpoints }, // Breakpoints
-  globalStyles,
-  badgeStyles, // badge styles
-  buttonStyles, // button styles
-  linkStyles, // link styles
-  progressStyles, // progress styles
-  sliderStyles, // slider styles
-  inputStyles, // input styles
-  textareaStyles, // textarea styles
-  switchStyles, // switch styles
-  CardComponent // card component
+    { breakpoints }, // Breakpoints
+    globalStyles,
+    badgeStyles, // badge styles
+    buttonStyles, // button styles
+    linkStyles, // link styles
+    progressStyles, // progress styles
+    sliderStyles, // slider styles
+    inputStyles, // input styles
+    textareaStyles, // textarea styles
+    switchStyles, // switch styles
+    CardComponent, // card component
+    containerTheme,
+    cardStyles
 )
