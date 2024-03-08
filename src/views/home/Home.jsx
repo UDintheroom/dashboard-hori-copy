@@ -1,11 +1,17 @@
-import { Box, SimpleGrid, VStack } from '@chakra-ui/react'
+import { Box, Card, SimpleGrid, VStack } from '@chakra-ui/react'
 import MiniSt from '../../components/card/MiniSt'
 import IconBox from '../../components/icons/IconBox'
 import { MdBarChart } from 'react-icons/md'
 import { FcAreaChart, FcDoughnutChart, FcFlowChart, FcComboChart } from 'react-icons/fc'
 import TotalSpent from './components/TotalSpent'
-import Weekly from './components/Weeklt'
+import Weekly from './components/Weekly'
 import CheckTable from './components/CheckTable'
+import DailyTraffic from './components/DailyTraffic'
+import PieCard from './components/PieCard'
+import ComplexTable from './components/ComplexTable'
+import ComplexTableComm from './components/ComplexTableComm'
+import Tasks from './components/Tasks'
+import MiniCalendar from '../../components/calendar/MiniCalendar'
 
 const Home = () => {
     return (
@@ -41,42 +47,32 @@ const Home = () => {
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
                 <TotalSpent />
                 <Weekly />
+            </SimpleGrid>
+            <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
                 <CheckTable />
-            </SimpleGrid>
-            {/* <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
-                <Box bg="tomato" height="80px">
-                    asdf
-                </Box>
-                <Box bg="tomato" height="80px">
-                    asdf
-                </Box>
-            </SimpleGrid>
-            <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
-                <Box bg="tomato" height="80px">
-                    asdf
-                </Box>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
-                    <Box bg="tomato" height="80px">
-                        asdf
-                    </Box>
-                    <Box bg="tomato" height="80px">
-                        asdf
-                    </Box>
+                    <DailyTraffic />
+                    <PieCard />
                 </SimpleGrid>
             </SimpleGrid>
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
-                <Box bg="tomato" height="80px">
-                    asdf
-                </Box>
+                <ComplexTable />
+                <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
+                    <Tasks />
+                    <MiniCalendar />
+                </SimpleGrid>
+            </SimpleGrid>
+            <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
+                <ComplexTableComm />
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing="20px" w={'100%'}>
                     <Box bg="tomato" height="80px">
-                        asdf
+                        ddd
                     </Box>
                     <Box bg="tomato" height="80px">
-                        asdf
+                        ddd
                     </Box>
                 </SimpleGrid>
-            </SimpleGrid> */}
+            </SimpleGrid>
         </VStack>
     )
 }

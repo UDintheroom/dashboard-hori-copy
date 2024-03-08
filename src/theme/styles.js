@@ -7,7 +7,7 @@ export const variablesC = {
 
 export const globalStyles = {
     colors: {
-        primary: '#422AFB',
+        primary: '#422afb',
         pirmaryLight: lighten(0.1, '#422AFB'),
         secondary: '#83D9FB',
         secondaryLight: lighten(0.1, '#83D9FB'),
@@ -33,6 +33,14 @@ export const globalStyles = {
             800: '#1F2937',
             900: '#111827',
         },
+    },
+    radii: {
+        none: '0',
+        sm: '8px',
+        md: '12px',
+        lg: '16px',
+        xl: '20px',
+        full: '9999px',
     },
     styles: {
         global: (props) => ({

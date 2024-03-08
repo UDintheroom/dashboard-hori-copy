@@ -11,7 +11,7 @@ const MiniSt = (props) => {
                 <Stat ml={startContent ? 5 : 0}>
                     <StatLabel>{name}</StatLabel>
                     <StatNumber>{value}</StatNumber>
-                    {growth ? <StatHelpText>{growth} 여기에는 글씨글씨</StatHelpText> : null}
+                    {growth ? <StatHelpText>{growth} 글씨 추가 랄라랄라</StatHelpText> : null}
                 </Stat>
                 <Spacer />
                 {endContent}

@@ -12,6 +12,8 @@ import { breakpoints } from './foundations/breakpoints'
 import { globalStyles } from './styles'
 import { containerTheme } from './components/container'
 import { cardStyles } from './components/card'
+import { tableStyles } from './components/table'
+
 export default extendTheme(
     { breakpoints }, // Breakpoints
     globalStyles,
@@ -25,5 +27,6 @@ export default extendTheme(
     switchStyles, // switch styles
     CardComponent, // card component
     containerTheme,
-    cardStyles
+    cardStyles,
+    tableStyles
 )
